@@ -48,6 +48,7 @@ public class RobotContainer {
     private static Vision vision;
 
     public RobotContainer() {
+        driver = new Driver();
         drivetrain = TunerConstants.createDrivetrain();
         configureBindings();
     }

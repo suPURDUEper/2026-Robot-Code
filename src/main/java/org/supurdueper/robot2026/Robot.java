@@ -85,6 +85,7 @@ public class Robot extends SupurdueperRobot {
         double endTime = Timer.getFPGATimestamp();
         Threads.setCurrentThreadPriority(false, 0);
         DogLog.log("Loop Time", endTime - startTime);
+        SmartDashboard.putNumber("Match Time", Timer.getMatchTime());
     }
 
     @Override

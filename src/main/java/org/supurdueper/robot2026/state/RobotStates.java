@@ -1,6 +1,7 @@
 package org.supurdueper.robot2026.state;
 
 import edu.wpi.first.wpilibj.RobotBase;
+import edu.wpi.first.wpilibj2.command.Commands;
 import edu.wpi.first.wpilibj2.command.button.RobotModeTriggers;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
 import org.supurdueper.robot2026.RobotContainer;
@@ -23,8 +24,7 @@ public final class RobotStates {
     public static final Trigger actionPurge = driver.extraRight.and(teleop);
     public static final Trigger actionShoot = driver.leftBumper.and(teleop);
     public static final Trigger actionClimbPrep = driver.downDpad.and(teleop);
-    public static final Trigger actionDropIntake = auto.onTrue(null);
-
+    public static final Trigger actionDropIntake = auto.onTrue(Commands.none());
 
     private RobotStates() {
         throw new IllegalStateException("Utility class");
