@@ -441,6 +441,46 @@ public class AutoRoutines {
                 leftToCenterThree);
     }
 
+    public AutoRoutine leftSixSeven() {
+        AutoRoutine routine = m_factory.newRoutine("Left_Six_Seven");
+        final AutoTrajectory leftOnlyOverBumpOne = routine.trajectory(leftOnlyWall, 0);
+        final AutoTrajectory leftOnlyIntakeBallsOne = routine.trajectory(leftOnlyWall, 1);
+        final AutoTrajectory leftOnlyToHubOne = routine.trajectory(leftOnlyWall, 2);
+        final AutoTrajectory leftUnderTrenchTwo = routine.trajectory(leftTrenchShort, 0);
+        final AutoTrajectory leftToCenterTwo = routine.trajectory(leftTrenchShort, 1);
+        final AutoTrajectory leftToScoreTwo = routine.trajectory(leftTrenchShort, 2);
+        final AutoTrajectory leftToCenterThree = routine.trajectory(leftTrenchThird, 0);
+        return trenchRun(
+                routine,
+                leftOnlyOverBumpOne,
+                leftOnlyIntakeBallsOne,
+                leftOnlyToHubOne,
+                leftUnderTrenchTwo,
+                leftToCenterTwo,
+                leftToScoreTwo,
+                leftToCenterThree);
+    }
+
+    public AutoRoutine rightSixSeven() {
+        AutoRoutine routine = m_factory.newRoutine("Right_Six_Seven");
+        final AutoTrajectory leftOnlyOverBumpOne = routine.trajectory(rightOnlyWall, 0);
+        final AutoTrajectory leftOnlyIntakeBallsOne = routine.trajectory(rightOnlyWall, 1);
+        final AutoTrajectory leftOnlyToHubOne = routine.trajectory(rightOnlyWall, 2);
+        final AutoTrajectory leftUnderTrenchTwo = routine.trajectory(rightTrenchShort, 0);
+        final AutoTrajectory leftToCenterTwo = routine.trajectory(rightTrenchShort, 1);
+        final AutoTrajectory leftToScoreTwo = routine.trajectory(rightTrenchShort, 2);
+        final AutoTrajectory leftToCenterThree = routine.trajectory(rightTrenchThird, 0);
+        return trenchRun(
+                routine,
+                leftOnlyOverBumpOne,
+                leftOnlyIntakeBallsOne,
+                leftOnlyToHubOne,
+                leftUnderTrenchTwo,
+                leftToCenterTwo,
+                leftToScoreTwo,
+                leftToCenterThree);
+    }
+
     public AutoRoutine rightTrenchShort() {
         AutoRoutine routine = m_factory.newRoutine("Right_Trench_Right");
         final AutoTrajectory rightUnderTrenchOne = routine.trajectory(rightTrenchStart, 0);

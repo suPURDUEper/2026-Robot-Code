@@ -59,6 +59,8 @@ public class Robot extends SupurdueperRobot {
         // autoChooser.addRoutine("Left Trench Steal", autoRoutines::leftTrenchSteal);
         autoChooser.addRoutine("Left Delay", autoRoutines::leftTrenchDelayShort);
         autoChooser.addRoutine("Right Delay", autoRoutines::rightTrenchDelayShort);
+        autoChooser.addRoutine("Six Seven Left", autoRoutines::leftSixSeven);
+        autoChooser.addRoutine("Six Seven Right", autoRoutines::rightSixSeven);
 
         SmartDashboard.putData("Auto Chooser", autoChooser);
         SmartDashboard.putNumber("Auto Timeout", autoTimeout.get());
